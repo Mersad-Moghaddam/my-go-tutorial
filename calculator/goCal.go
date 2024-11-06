@@ -12,7 +12,9 @@ func main() {
 		fmt.Println("\033[H\033[2J") // clear screen
 		fmt.Println("Simple Calculator")
 		fmt.Println("----------------")
+		name := "mersad"
 
+		fmt.Println(name)
 		for {
 			fmt.Println("1. Addition")
 			fmt.Println("2. Subtraction")
