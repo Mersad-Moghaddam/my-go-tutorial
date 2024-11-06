@@ -107,6 +107,10 @@ func toggleTaskCompletion(id int) {
 	fmt.Println("Task not found.")
 }
 
+// Main runs a simple to-do list application in a loop, allowing the user to select
+// options such as adding a task, listing tasks, editing a task, deleting a task,
+// toggling a task's completion status, or exiting the application. The screen is
+// cleared before displaying the menu and results.
 func main() {
 	loadTasks()
 	for {

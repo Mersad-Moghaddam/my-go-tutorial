@@ -25,6 +25,9 @@ func userHandler(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(user)
 }
 
+// main initializes the HTTP server, sets up route handlers for the welcome page
+// and user info API, and starts listening on port 8080. If the server fails to
+// start, it logs an error message.
 func main() {
 	// Define routes
 	http.HandleFunc("/", welcomeHandler)
