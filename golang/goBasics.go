@@ -90,7 +90,17 @@ func main() {
 	if cV8, err := strconv.ParseFloat(cV7, 64); err == nil {
 		f.Println(reflect.TypeOf(cV8))
 	}
+	mySlice := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	fmt.Println(mySlice)
 
+	mySlice2 := []string{"mersad", "ahmed", "mohamed"}
+	for i := 0; i < len(mySlice2); i++ {
+		fmt.Println(mySlice2[i])
+	}
+
+	for i := 0; i < len(mySlice); i++ {
+		fmt.Println(mySlice[i])
+	}
 }
 
 func Vote(iAge int) {
